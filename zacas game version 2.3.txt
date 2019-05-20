@@ -1,0 +1,535 @@
+Algoritmo "zacasgame2"
+//By: Larissice
+//Enjoy the game ;D
+var
+opcao, senha, i, n, y, bye: caractere
+m: inteiro
+vet:vetor [1..50] de inteiro
+inicio
+escreval ("Digite seu nome para começarmos:")
+leia (n)
+escreval ("Bem vindo ao zacas 2")
+escreval ("Tenha um bom jogo, ",n,"!")
+//
+//entrando no jogo: saudações e instruções
+escreval ("===================================")
+escreval (" .  +    ¨ .      +   ¨¨   . . +   ")
+escreval (" ___  . __ _ + __ _ . __ _  ___  . ")
+escreval ("|_  /  / _` | /  __| / _` |/ __|.  ")
+escreval (" / /_ | (_| ||  (__ | (_| |\__ \ + ")
+escreval ("/____| \__,_| \____| \__,_||___/  .")
+escreval (" +    .   ¨  +      .           +  ")
+Escreval ("B e m  v i n d o  a o  Z a c a s! .")
+escreval (" .    +      ¨   :   +    .   ¨ .  ")
+escreval ("===================================")
+
+Escreval ("Este jogo é cheio de referências e")
+escreval ("easter eggs, consegue encontrá-los?")
+
+escreval ("===================================")
+escreval ("Regras:")
+escreval ("1. Não há regras")
+escreval ("Dê enter para começar.")
+escreval ("Digite sair a qualquer momento para sair")
+leia (i)
+se (i <> 0) entao
+limpatela
+fimse
+      se (i = "sair") entao
+      interrompa
+      fimse
+
+//level 1
+escreval ("Dê enter para começar.")
+leia (y)
+se (y <> 0) entao
+limpatela
+fimse
+
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 1]")
+escreval ("                                   ")
+escreval ("Mito")
+escreval ("-----------")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "mitocôndria") e (i <> "dica") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "mitocôndria") entao
+          escreval ("Resposta correta.")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("Tema: Citologia")
+              escreval ("Organela citoplasmática membranosa.")
+              leia (i)
+              fimse
+              //zoeiras
+              se (i = "bolsonaro") entao
+              escreval ("Se retire do jogo, por favor")
+              leia (y)
+              fimse
+ate i = "mitocôndria"
+limpatela
+         se (i <> "sair") entao
+         escreval ("Resposta correta.")
+         escreval ("Next level...")
+         leia (y)
+         fimse
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//level 2
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 2]")
+escreval ("                                   ")
+escreval ("NÃO")
+escreval ("FALE")
+escreval ("SOBRE")
+escreval ("ELE")
+escreval ("             ")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "clube da luta") e (i <> "dica") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "clube da luta") entao
+          escreval ("Eu disse para não falar sobre ele!")
+          escreval ("Mas ok... Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("1. Não fale sobre ele.")
+              escreval ("2. Não fale sobre ele.")
+              leia (i)
+              fimse
+
+ate i = "clube da luta"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//level 3
+
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 3]")
+escreval ("                                   ")
+escreval ("      .......")
+escreval ("    .....O.....")
+escreval ("  ............")
+escreval ("  .........      +")
+escreval ("  ............")
+escreval ("    ...........")
+escreval ("      .......")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "pacman") e (i <> "dica") e (i <> "pacs+") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "pacman") entao
+          escreval ("Resposta correta.")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("_ _ _ _ _ _")
+              escreval ("jogo")
+              leia (i)
+              fimse
+              //zoeiras
+              se (i = "pacs+") entao
+              escreval ("Vá e não peques mais")
+              escreval ("Tente outra vez")
+              leia (i)
+              fimse
+ate i = "pacman"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//fase 4
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 4]")
+escreval ("                                   ")
+escreval ("´´Thor, ele voltou!")
+escreval ("O moleque da TV tá me chamando de imbecil de novo.``")
+escreval ("             ")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "noobmaster69") e (i <> "dica") e (i <> "thor") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "noobmaster69") entao
+          escreval ("Noobmaster69, leave Korg alone.")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("Avengers: Endgame")
+              leia (i)
+              fimse
+              //zoeiras
+              se (i = "thor") entao
+              escreval ("")
+              leia (y)
+              escreval ("")
+              leia (i)
+              fimse
+ate i = "noobmaster69"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//fase 5
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 5]")
+escreval ("                                   ")
+escreval ("mundo invertido")
+escreval ("             ")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "stranger things") e (i <> "dica") e (i <> "thor") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "stranger things") entao
+          escreval ("")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("Série da Netflix")
+              leia (i)
+              fimse
+                   se (i = "dica 2") entao
+                   escreval ("Demogorgon")
+                   leia (i)
+                   fimse
+ate i = "stranger things"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//fase 6
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 6]")
+escreval ("                                   ")
+escreval ("  ____________")
+escreval (" |\ __________\")
+escreval (" | |           |")
+escreval (" | |           |")
+escreval ("  \|___________|")
+escreval ("      ||\/|")
+escreval ("      ||\/|")
+escreval ("      ||\/|")
+escreval ("      ||\/|")
+escreval ("      \|\/|")
+escreval ("             ")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "thor") e (i <> "dica") e (i <> "dica 2") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "thor") entao
+          escreval ("")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("Mjölnir")
+              leia (i)
+              fimse
+                   se (i = "dica 2") entao
+                   escreval ("Filho de Odin")
+                   leia (i)
+                   fimse
+ate i = "thor"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//fase 7
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 7]")
+escreval ("                                   ")
+escreval ("50 531 QU3 N4D4 531")
+escreval ("             ")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "qund") e (i <> "dica") e (i <> "dica 2") e (i = "sócrates") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "qund") entao
+          escreval ("")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("Números e letras são coisas diferentes")
+              leia (i)
+              fimse
+                   se (i = "dica 2") entao
+                   escreval ("_ _ _ _")
+                   leia (i)
+                   fimse
+                        se (i = "sócrates") entao
+                        escreval ("Só sei que nada sei,")
+                        escreval ("disse Sócrates.")
+                        escreval ("E eu digo que só sei que")
+                        escreval ("você errou a resposta.")
+                        leia (i)
+                        fimse
+ate i = "qund"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//fase 8
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 8]")
+escreval ("                                   ")
+escreval ("     _       _")
+escreval ("   _\ \    / /_ ")
+escreval ("   \ \ \  / / /")
+escreval (" _  | \ \/ / /")
+escreval ("\ \_/        |")
+escreval (" \      ___  |")
+escreval ("  \   \      /")
+escreval ("   \__ |  __/")
+escreval ("    |      |")
+escreval ("    |      |")
+escreval ("             ")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "star trek") e (i <> "dica") e (i <> "dica 2") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "star trek") entao
+          escreval ("")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("Filme de ficção científica")
+              leia (i)
+              fimse
+                   se (i = "dica 2") entao
+                   escreval ("Jornada nas Estrelas")
+                   leia (i)
+                   fimse
+ate i = "star trek"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//fase 9
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 9]")
+escreval ("                                   ")
+escreval ("limão um der te vida a se fazer deve você que o")
+escreval ("             ")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "limonada") e (i <> "dica") e (i <> "dica 2") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "limonada") entao
+          escreval ("")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("Leia de trás pra frente")
+              leia (i)
+              fimse
+                   se (i = "dica 2") entao
+                   escreval ("O que se faz com um limão?")
+                   leia (i)
+                   fimse
+ate i = "limonada"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//fase 10
+repita i
+escreval ("___________________________________")
+escreval ("===================================")
+escreval ("[Level 10]")
+escreval ("                                   ")
+escreval ("|    /   | |   \    |")
+escreval ("|   /   /._.\   \   |")
+escreval ("|  /             \  |")
+escreval ("|   _____________   |")
+escreval ("|   \___________/   |")
+escreval ("|    \_________/    |")
+escreval ("|   |  |  |  |  |   |")
+escreval ("|   |  |  |  |  |   |")
+escreval ("|   |  |  |  |  |   |")
+escreval ("\___|__|__|__|__|___/")
+escreval ("             ")
+leia (i)
+se (i = "sair") entao
+interrompa
+fimse
+     se (i <> "thanos") e (i <> "dica") e (i <> "avengers") entao
+     escreval ("Tente novamente.")
+     leia (i)
+     fimse
+          se (i = "thanos") entao
+          escreval ("Resposta correta.")
+          escreval ("Next level...")
+          leia (y)
+          fimse
+              se (i = "dica") entao
+              escreval ("avengers")
+              leia (i)
+              fimse
+              //zoeiras
+              se (i = "avengers") entao
+              escreval ("Qual o sabor de sorvete preferido dos Avengers?")
+              leia (y)
+              escreval ("Napolithanos")
+              leia (i)
+              fimse
+ate i = "thanos"
+limpatela
+//prosseguir
+         se (i <> "sair") entao
+         escreval ("___________________________________")
+         escreval ("Dê enter para prosseguir...")
+         leia (y)
+         fimse
+         limpatela
+//fase extra
+escreval ("Parabéns! Você concluiu todos os níveis.")
+escreval ("Gostaria de desbloquear o nível extra?")
+leia (opcao)
+se (opcao = "não") entao
+interrompa
+limpatela
+escreval ("Fim de jogo")
+fimse
+se (opcao = "sim") entao
+limpatela
+repita
+escreval ("O ano é 1999...")
+escreval ("O nome do escolhido é Neo")
+leia (i)
+     se (i = "matrix") entao
+   para m de 1 ate 50 faca
+   escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+   escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+   escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+   escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+   escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+   escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+   escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+   escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+   escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+   escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+   escreval ("67dftdwehwuh787r8t7ehrernrtyr8ee984235747n6j54j6545")
+   escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+   escreval ("16H6J343H45J46B5B65B 65B 6N54 5N 65N6N565N5B55B65B6")
+   escreval ("565mn56 5645b6 45b 645b 645nb 6n4564n bn56b45 64 b5")
+   escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+   escreval ("894Hu9fgdr8tue958hHAHGH986U464564KHT4546564577J5J77")
+   escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+   escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+   fimpara
+          escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+          escreval ("894Hu      w3lc0m3           4564KHT4546564577J5J77")
+          escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+          escreval ("UI3435h355H435H66B45654H    t0   09867ty7fd6g7fR6J6")
+          escreval ("16H6J343H45J46B5B65B565B46N5495N465N6N565N5B55B65B6")
+          escreval ("565mn56   th3    b0645b0645nb86n4564n8bn56b459647b5")
+          escreval ("906IJD564576775OIFJGDG98FGFJ7657H905I6095U965895464")
+          escreval ("894Hu9fgdr8tue958h     m4tr1x     HT4546564577J5J77")
+          escreval ("67dftdwehwuht87r8t7ehrernrtyr8ee984235747n6j54j6545")
+          escreval ("UI3435h355H435H66B45654HBT6456H1I09867ty7fd6g7fR6J6")
+          fimse
+ate i = "matrix"
+fimse
+fimalgoritmo
